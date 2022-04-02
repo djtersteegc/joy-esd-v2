@@ -24,36 +24,6 @@ F 3 " ~" H 4800 4000 50  0001 C CNN
 	1    4800 4000
 	0    1    1    0   
 $EndComp
-$Comp
-L ESDA5V3SC5:ESDA5V3SC5 U1
-U 1 1 603A45B2
-P 3900 2800
-F 0 "U1" V 3946 2570 50  0000 R CNN
-F 1 "ESDA6V3SC5" V 3855 2570 50  0000 R CNN
-F 2 "ESDA5V3SC5:SOT95P280X145-5N" H 3900 2800 50  0001 L BNN
-F 3 "" H 3900 2800 50  0001 L BNN
-F 4 "1.45mm" H 3900 2800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "IPC7351B" H 3900 2800 50  0001 L BNN "STANDARD"
-F 6 "10" H 3900 2800 50  0001 L BNN "PARTREV"
-F 7 "ST Microelectronics" H 3900 2800 50  0001 L BNN "MANUFACTURER"
-	1    3900 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L ESDA5V3SC5:ESDA5V3SC5 U2
-U 1 1 603AC0E0
-P 5750 2800
-F 0 "U2" V 5796 2570 50  0000 R CNN
-F 1 "ESDA6V3SC5" V 5705 2570 50  0000 R CNN
-F 2 "ESDA5V3SC5:SOT95P280X145-5N" H 5750 2800 50  0001 L BNN
-F 3 "" H 5750 2800 50  0001 L BNN
-F 4 "1.45mm" H 5750 2800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "IPC7351B" H 5750 2800 50  0001 L BNN "STANDARD"
-F 6 "10" H 5750 2800 50  0001 L BNN "PARTREV"
-F 7 "ST Microelectronics" H 5750 2800 50  0001 L BNN "MANUFACTURER"
-	1    5750 2800
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4700 3700 4700 3300
 Wire Wire Line
@@ -70,21 +40,11 @@ Wire Wire Line
 Wire Wire Line
 	4500 3100 4000 3100
 Wire Wire Line
-	4000 2500 4400 2500
-Wire Wire Line
-	4400 2500 4400 3700
-Wire Wire Line
 	3800 3100 3800 3400
 Wire Wire Line
 	3800 3400 4800 3400
 Wire Wire Line
 	4800 3400 4800 3700
-Wire Wire Line
-	4600 3700 4600 2350
-Wire Wire Line
-	4600 2350 3800 2350
-Wire Wire Line
-	3800 2350 3800 2500
 Wire Wire Line
 	5650 3100 5650 3550
 $Comp
@@ -102,16 +62,6 @@ Wire Wire Line
 	5650 3550 4900 3550
 Wire Wire Line
 	4900 3550 4900 3700
-Wire Wire Line
-	5650 2500 5100 2500
-Wire Wire Line
-	5100 2500 5100 3700
-Wire Wire Line
-	5850 2500 5850 2350
-Wire Wire Line
-	5850 2350 5200 2350
-Wire Wire Line
-	5200 2350 5200 3700
 Wire Wire Line
 	5000 3700 5000 3200
 Wire Wire Line
@@ -140,4 +90,64 @@ F 3 "" H 6400 3600 50  0001 C CNN
 	1    6400 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L SamacSys_Parts:ESDALD05UD4X D1
+U 1 1 6248BDD5
+P 3800 3100
+F 0 "D1" V 4396 2772 50  0000 R CNN
+F 1 "ESDALD05UD4X" V 4305 2772 50  0000 R CNN
+F 2 "SamacSys:SOT95P280X125-6N" H 4750 3200 50  0001 L CNN
+F 3 "https://www.ween-semi.com/sites/default/files/2021-05/ESDALD05UD4.pdf" H 4750 3100 50  0001 L CNN
+F 4 "ESD Suppressors / TVS Diodes protect voltage sensitive components from ESD and transient voltage events" H 4750 3000 50  0001 L CNN "Description"
+F 5 "1.25" H 4750 2900 50  0001 L CNN "Height"
+F 6 "771-ESDALD05UD4X" H 4750 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/WeEn-Semiconductors/ESDALD05UD4X?qs=aP1CjGhiNiEdF7M4wGPYzQ%3D%3D" H 4750 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "WeEn Semiconductors" H 4750 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESDALD05UD4X" H 4750 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3800 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1850 3800 1850
+Wire Wire Line
+	3800 1850 3800 2000
+Wire Wire Line
+	4600 1850 4600 3700
+Wire Wire Line
+	4400 1900 4000 1900
+Wire Wire Line
+	4000 1900 4000 2000
+Wire Wire Line
+	4400 1900 4400 3700
+$Comp
+L SamacSys_Parts:ESDALD05UD4X D2
+U 1 1 62496779
+P 5650 3100
+F 0 "D2" V 6246 2772 50  0000 R CNN
+F 1 "ESDALD05UD4X" V 6155 2772 50  0000 R CNN
+F 2 "SamacSys:SOT95P280X125-6N" H 6600 3200 50  0001 L CNN
+F 3 "https://www.ween-semi.com/sites/default/files/2021-05/ESDALD05UD4.pdf" H 6600 3100 50  0001 L CNN
+F 4 "ESD Suppressors / TVS Diodes protect voltage sensitive components from ESD and transient voltage events" H 6600 3000 50  0001 L CNN "Description"
+F 5 "1.25" H 6600 2900 50  0001 L CNN "Height"
+F 6 "771-ESDALD05UD4X" H 6600 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/WeEn-Semiconductors/ESDALD05UD4X?qs=aP1CjGhiNiEdF7M4wGPYzQ%3D%3D" H 6600 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "WeEn Semiconductors" H 6600 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESDALD05UD4X" H 6600 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5650 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 1850 5850 1850
+Wire Wire Line
+	5850 1850 5850 2000
+Wire Wire Line
+	5200 1850 5200 3700
+Wire Wire Line
+	5650 2000 5650 1900
+Wire Wire Line
+	5650 1900 5100 1900
+Wire Wire Line
+	5100 1900 5100 3700
+NoConn ~ 5750 2000
+NoConn ~ 3900 2000
 $EndSCHEMATC
